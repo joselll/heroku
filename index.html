@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joshua</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  
+
+
+
+</head>
+<style type="text/css">
+  
+  
+</style>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+
+<section id="intro" class="home-slide text-light">
+<div class="bs-example" data-example-id="inverted-navbar">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      
+            
+          </button>
+          
+         <a class="navbar-brand" href="#/inicio">UNIVERSIDAD BETHESDA</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/inicio">Unibeth <span class="sr-only">(current)</span></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Facultades <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/cienciasExactas">CIENCIAS EXACTAS Y TECNOLOGÍA</a></li>
+                                <li><a href="#/informatica"> - Ingeniería Informática</a></li>
+                                <li><a href="#/comercial"> - Ingeniería Comercial</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#/cienciasSociales">FACULTAD DE CIENCIAS SOCIALES Y HUMANIDADES</a></li>
+                                <li><a href="#/comunicacion"> - Comunicación Social</a></li>
+                                <li><a href="#/trabajoSocial"> - Trabajo Social</a></li>
+                                <li><a href="#/teologia"> - Teología</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Campus Unibeth <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/laboratorio">Laboraratorio</a></li>
+                                <li><a href="#"> - Ingeniería Informática</a></li>
+                                <li><a href="#"> - Ingeniería Comercial</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#/salonAuditorio">Salon Auditorio</a></li>
+                                <li><a href="#"> - Comunicación Social</a></li>
+                                <li><a href="#"> - Trabajo Social</a></li>
+                                <li><a href="#"> - Teología</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Postgrado <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/requisitosAdmision">Requisitos de Admision</a></li>
+                                <li><a href="#"> - Ingeniería Informática</a></li>
+                                <li><a href="#"> - Ingeniería Comercial</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#programa2016">Programa 2016</a></li>
+                                <li><a href="#"> - Comunicación Social</a></li>
+                                <li><a href="#"> - Trabajo Social</a></li>
+                                <li><a href="#"> - Teología</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/noticias">Noticias</a></li>
+                        <li><a href="#/consultas">Consultas</a></li>
+
+                    </ul>
+                   <!--  <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form> -->
+
+                </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+    </section>
+<!--carussel-->
+<div class="articulo">
+
+
+<!--aqui va todoo del articulo -->
+
+
+ </div>
+
+<!-- termino de carussel-->
+
+
+<div class="pie">
+      
+
+
+  </div>
+
+  <div class="col-md-1"></div>
+</body>
+</html>
+<script>
+$(window).on('hashchange',function(){
+    var url=window.location.hash;
+    rutaArchivo=url.substring(2,url.length);
+    $('.articulo').load(rutaArchivo+'.html')
+
+    
+})
+
+$(window).load(function(){
+    $(window).trigger('hashchange');
+
+})
+//0function cargarPaginaEnContenedor(nombrePagina) {
+   // $('.articulo').load(nombrePagina);
+//})
+
+//cargarPaginaEnContenedor('Inicio.html');
+
+</script>
+
+
+
